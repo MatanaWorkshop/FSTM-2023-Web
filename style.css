@@ -1,0 +1,282 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+/* End Fonts */
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+/* Header */
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    background-color: #8383ff;
+    color: white;
+}
+
+.navLogo{
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+}
+
+.navLogo > img {
+    width: 40px;
+    height: auto;
+    margin-right: 10px;
+}
+
+header > ul{
+    list-style: none;
+    display: flex;
+}
+
+header > ul > li > a{
+    text-decoration: none;
+    color: white;
+    margin-left: 10px;
+}
+/* End Header */
+
+/* Body */
+main {
+    min-height: 100vh;
+    padding: 40px 60px;
+}
+
+.doubleContent{
+    display: flex;
+    width: 100%;
+}
+
+.leftContent{
+    width:50%;
+    display: flex;
+    align-items: center;
+}
+
+.leftContent h1{
+    font-size: 50px;
+    text-transform: capitalize;
+    font-weight: 600;
+    line-height: 70px;
+    margin-bottom: 20px;
+}
+
+.leftContent a{
+    margin-top: 40px;
+    display: block;
+    padding: 8px 16px;
+    width: fit-content;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    background-color: hsl(60, 100%, 76%);
+}
+
+.rightContent{
+    width: 50%;
+}
+
+.rightContent > img{
+    width: 100%;
+    height: autos;
+}
+
+.singleContent{
+    margin-top: 40px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.singleContent> h1{
+    font-weight: 600;
+    font-size: 35px;
+    margin-bottom: 30px;
+}
+/* End Body */
+
+/* Footer */
+footer{
+    padding: 30px;
+    text-align: center;
+    background-color: #8383ff;
+    color: white;
+    font-size: 12px;
+    font-weight: 700;
+}
+/* End Footer */
+
+/* Color Contrast */
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.card {
+    width: 320px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Inter', sans-serif;
+    padding: 20px;
+    margin: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.title {
+    font-size: 24px;
+    font-family: 'Lora', serif;
+    font-weight: 400;
+    text-align: left;
+}
+
+.content {
+    font-size: 14px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    text-align: left;
+}
+
+.card.card-white {
+    background-color: white;
+}
+
+.title.text-white, .content.text-white {
+    color: white;
+}
+
+.card.card-black {
+    background-color: black;
+}
+
+.title.text-black, .content.text-black {
+    color: black;
+}
+
+.card.card-blue {
+    background-color: hsl(240, 100%, 70%);
+}
+
+.title.text-blue, .content.text-blue {
+    color: hsl(240, 100%, 70%);
+}
+
+.card.card-red {
+    background-color: hsl(0, 100%, 70%);
+}
+
+.title.text-red, .content.text-red {
+    color: hsl(0, 100%, 70%);
+}
+
+/* End Color Contrast */
+
+/* Color scheme examples */
+.color-example-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    row-gap: 20px;
+}
+.color-example {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.color-example h3 {
+    margin-bottom: 20px;
+}
+.color-example img {
+    width: 550px;
+    height: 300px;
+    object-fit: cover;
+}
+/* END Color scheme examples */
+
+/* Flexbox */
+.mycard{
+    background-color: rgb(131, 131, 255);
+    padding: 20px;
+    margin: 10px;
+}
+
+.flex-item{
+    background-color: white;
+    padding: 20px;
+    margin: 10px;
+}
+
+.flex-row{
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-row-reverse{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.flex-column{
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+}
+
+.flex-column-reverse{
+    display: flex;
+    flex-direction: column-reverse;
+    height: 300px;
+}
+.mycard{
+    background-color: rgb(131, 131, 255);
+    padding: 20px;
+    margin: 10px;
+}
+
+.flex-item{
+    background-color: white;
+    padding: 20px;
+    margin: 10px;
+}
+
+.flex-flex-start{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.flex-flex-end{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.flex-center{
+    display: flex;
+    justify-content: center;
+}
+
+.flex-space-between{
+    display: flex;
+    justify-content: space-between;
+}
+
+.flex-space-around{
+    display: flex;
+    justify-content: space-around;
+}
+
+.flex-space-evenly{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/* END Flexbox */
